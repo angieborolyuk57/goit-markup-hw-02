@@ -84,8 +84,15 @@ color: #212121;
   color:#2196F3
 }
 
-button { 
-  cursor:pointer; }
+.btn { 
+  background-color:F5F4FA;
+  cursor:pointer; 
+}
+
+.blue-button:hover{
+  color:#FFFFFF;
+  background-color:#2196F3;
+}
 
 <!--filter-elements
 .category-name {
