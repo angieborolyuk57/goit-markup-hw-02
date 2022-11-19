@@ -84,10 +84,18 @@ color: #212121;
   color:#2196F3
 }
 
-.btn { 
-  background-color:F5F4FA;
-  cursor:pointer; 
+.btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor:pointer;
 }
+
 
 .blue-button:hover{
   color:#FFFFFF;
@@ -127,14 +135,16 @@ line-height:1.19;
   color: #FFFFFF;
  }
  .address-line {
+  font-style:normal;
   font-size: 14px;
 line-height: 1.71;
  }
- .address{
+ .address-line {
   color: #FFFFFF;
  }
 
-.mail,
-.phone{
+.email-footer,
+.tel-footer {
+  text-decoration:none;
 color: rgba(255, 255, 255, 0.6);
 }
