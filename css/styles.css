@@ -44,23 +44,26 @@ color: #000000;
 }
 
 <!--auth-nav
+
 .auth-nav {
+ font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.email-header,
+.tel-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
- 
-}
-
-
-.email,
-.tel {
 text-decoration:none;
 color:#757575;
 }
 
-.email:hover,
-.email:focus {
+.email-header:hover,
+.email-header:focus {
     color:#2196F3;
 }
 
