@@ -45,7 +45,7 @@ h3{
   padding-bottom:25px;
   margin-right:93px;
 
-
+  color: var(--accent-color);
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
@@ -55,9 +55,7 @@ h3{
   text-decoration:none;
 }
 
-.web {
-  color: var(--accent-color);
-}
+
 
 .studio{
 color: #000000;
