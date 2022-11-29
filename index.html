@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     
@@ -13,93 +14,113 @@
 <body>  
     <!--page header-->
     <header class="page-header"> 
-         <nav>   
-             <a class="logo" href="../goit-markup-hw-01/index.html"> <span  class="web">Web</span>  <span class="studio"> Studio</span> </a>
-               <ul class="site-nav"> 
-                  <li class="list"> <a class="item" href="../goit-markup-hw-01/index.html">Студія</a></li>
-                  <li class="list"> <a class="accent" href="./index.html">Портфоліо</a></li>
-                  <li class="list"> <a class="item" href="#contact">Контакти</a></li>
+        <div class="container main-nav">
+         <nav class="nav">   
+             <a class="logo" href="../goit-markup-hw-01/index.html"> <span class="web">Web</span><span class="studio">Studio</span> </a>
+               <ul class="site-nav list"> 
+                  <li class="list site-nav-item"> <a class="item link" href="../goit-markup-hw-01/index.html">Студія</a></li>
+                  <li class="list site-nav-item"> <a class="accent link" href="./index.html">Портфоліо</a></li>
+                  <li class="list site-nav-item"> <a class="item link" href="#contact">Контакти</a></li>
              </ul>
         </nav>
+   
        <div class="auth-nav"> 
-                  <a class="email-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                  <a class="tel-header" href="tel:+380961111111">+38 096 111 11 11</a>
-         </div>        
+                  <a class="email-header item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="tel-header item" href="tel:+380961111111">+38 096 111 11 11</a>
+         </div> 
+        </div>       
      </header>
      <!--main section-->
 <main>
  <section>
        <!--filter navigation-->
-    <ul class="filter-nav">
-        <li class="list">
+    <div class="container">
+        <ul class="filter-nav">
+        <li class="list item">
             <button class="btn blue-button" type="button">Усі</button>
         </li>
-        <li class="list">
-            <button class="btn type="button">Веб-сайти</button>
+        <li class="list item">
+            <button class="btn" type="button">Веб-сайти</button>
         </li>
-        <li class="list">
-            <button class="btn type="button">Додатки</button>
+        <li class="list item">
+            <button class="btn" type="button">Додатки</button>
         </li>
-        <li class="list">
-            <button class="btn type="button">Дизайн</button>
+        <li class="list item">
+            <button class="btn" type="button">Дизайн</button>
         </li>
-        <li class="list">
-            <button class="btn type="button">Маркетинг</button>
-        </li>
-    </ul>
-    <!--filter elements-->
-    <ul>
-        <li class="list">
-            <img src="./imgport/img.jpg" alt="Технокряк" width="294">
-            <h3 class="category-name">Технокряк</h3> <span class="category-type">Веб-сайт</span>
-        </li>
-        <li class="list"> 
-            <img src="./imgport/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="294">
-            <h3 class="category-name">Постер New Orlean vs Golden Star</h3> <span class="category-type">Дизайн</span>
-        </li>
-        <li class="list">
-            <img src="./imgport/img-3.jpg" alt="Ресторан Seafood" width="294">
-            <h3 class="category-name">Ресторан Seafood</h3> <span class="category-type">Додаток</span>
-        </li>
-        <li class="list"> 
-            <img src="./imgport/img-4.jpg" alt="Проєкт Prime" width="294">
-            <h3 class="category-name">Проєкт Prime</h3> <span class="category-type">Маркетинг</span>
-        </li>
-        <li class="list"> 
-            <img src="./imgport/img-5.jpg" alt="Проєкт Boxes" width="294">
-            <h3 class="category-name">Проєкт Boxes</h3> <span class="category-type">Додаток</span>
-        </li>
-        <li class="list">
-            <img src="./imgport/img-6.jpg" alt="Inspiration has no Borders" width="294">
-            <h3 class="category-name">Inspiration has no Borders</h3> <span class="category-type">Веб-сайт</span>
-        </li>
-        <li class="list"> 
-            <img src="./imgport/img-7.jpg" alt="Видання Limited Edition" width="294">
-            <h3 class="category-name">Видання Limited Edition</h3> <span class="category-type">Дизайн</span>
-        </li>
-        <li class="list">
-            <img src="./imgport/img-8.jpg" alt="Проєкт LAB" width="294">
-            <h3 class="category-name">Проєкт LAB</h3> <span class="category-type">Маркетинг</span>
-        </li>
-        <li class="list">
-            <img src="./imgport/img-9.jpg" alt="Growing Business" width="294">
-            <h3 class="category-name">Growing Business</h3> <span class="category-type">Додаток</span>
+        <li class="list item">
+            <button class="btn" type="button">Маркетинг</button>
         </li>
     </ul>
+    <ul class="list filter-wrap">
+        <li class="list filt-element">
+            <img src="./imgport/img.jpg" alt="Технокряк" width="370">
+        <div class="text-container"><h3 class="category-name">Технокряк</h3> <span class="category-type">Веб-сайт</span>
+            </div>
+        </li>
+        <li class="list filt-element"> 
+            <img src="./imgport/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+            <div class="text-container"><h3 class="category-name">Постер New Orlean vs Golden Star</h3> <span class="category-type">Дизайн</span>
+            </div>
+        </li>
+        <li class="list filt-element">
+            <img src="./imgport/img-3.jpg" alt="Ресторан Seafood" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Ресторан Seafood</h3> <span class="category-type">Додаток</span>
+        </div>
+        </li>
+        <li class="list filt-element"> 
+            <img src="./imgport/img-4.jpg" alt="Проєкт Prime" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Проєкт Prime</h3> <span class="category-type">Маркетинг</span>
+            </div>
+        </li>
+        <li class="list filt-element"> 
+            <img src="./imgport/img-5.jpg" alt="Проєкт Boxes" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Проєкт Boxes</h3> <span class="category-type">Додаток</span>
+            </div>
+        </li>
+        <li class="list filt-element">
+            <img src="./imgport/img-6.jpg" alt="Inspiration has no Borders" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Inspiration has no Borders</h3> <span class="category-type">Веб-сайт</span>
+            </div>
+        </li>
+        <li class="list filt-element"> 
+            <img src="./imgport/img-7.jpg" alt="Видання Limited Edition" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Видання Limited Edition</h3> <span class="category-type">Дизайн</span>
+            </div>
+        </li>
+        <li class="list filt-element">
+            <img src="./imgport/img-8.jpg" alt="Проєкт LAB" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Проєкт LAB</h3> <span class="category-type">Маркетинг</span>
+            </div>
+        </li>
+        <li class="list filt-element">
+            <img src="./imgport/img-9.jpg" alt="Growing Business" width="370">
+            <div class="text-container">
+                <h3 class="category-name">Growing Business</h3> <span class="category-type">Додаток</span>
+            </div>
+        </li>
+    </ul>
+</div>
 
  </section>
 
 </main>
 <!--footer-->   
-<footer class="footer"> 
-    <a href="../goit-markup-hw-01/index.html" class="logo"> <span class="web">Web</span>            
-               <span class="studio-footer">Studio</span>
+<footer class="footer"> <div class="container">
+    <a href="../goit-markup-hw-01/index.html" class="logo logo-footer"> <span class="web">Web</span><span class="studio-footer">Studio</span>
     </a>
    <address id="contact" class="address-line">
             <span class="address">м. Київ, пр-т Лесі Українки, 26</span>
             <a class="email-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a> 
     </address>
+</div>
 </footer>
 </body>
 </html>
