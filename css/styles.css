@@ -147,7 +147,7 @@ color: var(--main-black);
   margin-top:0px;
   margin-bottom:50px;
 }
-.filter-nav .item + .item{
+.item + .item{
   margin-left:8px;
 }
 
