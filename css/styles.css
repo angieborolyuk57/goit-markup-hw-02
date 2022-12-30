@@ -2,6 +2,7 @@
   --accent-color:#2196F3;
   --primary-white:#FFFFFF;
   --main-black:#212121;
+  --background-color:#2F303A;
 
 }
 *, ::after, ::before {
@@ -288,7 +289,7 @@ height:100%;
 top:0px;
 left:0px;
 background:rgba(33, 150, 243, 0.9);
-color: #FFFFFF;
+color: var(--primary-white);
 overflow: hidden;
 padding: 63px 24px;
 transform:translateY(100%);
@@ -338,7 +339,7 @@ color:#757575;
   padding-top:60px;
   padding-bottom:60px;
 
-  background: #2F303A;
+  background: var(--background-color);
 }
 
 
@@ -394,6 +395,7 @@ line-height:1.19;
 color: rgba(255, 255, 255, 0.6);
 }
 
+
 /*Socials footer sections  */
 
 .footer-container{
@@ -418,7 +420,7 @@ color: rgba(255, 255, 255, 0.6);
     line-height: 1.14;
      line-height: 100%;
     text-transform:uppercase;
-    color:#FFFFFF;
+    color:var(--primary-white);
   }
 
 .socials-list-footer{
@@ -430,7 +432,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .socials-icon-footer{
   display:inline-block;
-  fill:#FFFFFF;
+  fill:var(--primary-white);
   object-fit: cover;
 }
 
@@ -456,3 +458,72 @@ color: rgba(255, 255, 255, 0.6);
   fill:var(--primary-white);
   background-color: var(--accent-color);
 }
+
+
+/* Form*/
+.subscription{
+  width:570px;
+  height:86px;
+  margin-left:94px;
+  display:flex;
+  flex-direction: column;
+}
+
+.subscription-label{
+  text-size:14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  margin-bottom:20px;
+}
+
+.flex-position{
+  display:flex;
+}
+
+.subscribe-input{
+  width:358px;
+  height:50px;
+  padding:16px 18px;
+  margin-right:12px;
+  background-color: var(--background-color);
+  color:var(--primary-white);
+  border: 1px solid #FFFFFF4D;
+}
+
+.subscribe-input:focus{
+  border-color:var(--accent-color);
+  border-radius: 4px;
+}
+
+.subscribe-button{
+  border-radius:4px;
+  border: 1px Solid var(--accent-color);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:1.88;
+  letter-spacing: 0.06em;
+
+  color:var(--primary-white);
+  background-color: var(--accent-color);
+  cursor:pointer; 
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width:200px;
+  height:50px;
+
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  }
+
+  .send-icon{
+    margin-left:10px;
+  }
