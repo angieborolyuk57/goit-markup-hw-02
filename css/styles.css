@@ -470,10 +470,12 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription-label{
-  text-size:14px;
+  margin-top:12px;
+  font-weight: 700;
+  font-size:14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primary-white);
+  color: #FFFFFF;
   margin-bottom:20px;
 }
 
