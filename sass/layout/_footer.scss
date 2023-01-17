@@ -1,0 +1,119 @@
+.footer{
+    padding-top:60px;
+    padding-bottom:60px;
+    
+    background: var(--background-color);
+
+    &__container{
+        display:flex; 
+      }
+      
+      &__logo{
+      display:inline-block;
+      margin-bottom:28px;
+      
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 26px;
+      line-height:1.19;
+      
+      text-decoration:none;
+      color: var(--accent-color);
+      }
+      
+      /* address design */
+      
+      &__studio{
+        color:var(--primary-white);
+       }
+      
+       &__contacts{
+        display:flex;
+        flex-direction: column;
+      
+        font-style:normal;
+        font-size: 14px;
+        line-height: 1.71;
+       }
+      
+       &__address{
+        margin-bottom:12px;
+        color: var(--primary-white);
+       }
+      
+       &__email{
+        margin-bottom:12px;
+       }
+      
+      &__email,
+      &__tel {
+      text-decoration:none;
+      color: rgba(255, 255, 255, 0.6);
+      }
+
+    }
+    
+
+    /*Socials footer section design */
+
+.socials-footer{
+    width: 206px;
+    height: 80px;
+    margin-left:70px;
+    margin-top:12px;
+    margin-bottom:72px;
+
+    &__headline{
+        display:inline-block;
+        margin:0px;
+        margin-bottom:20px;
+        padding:0px;
+    
+        font-size: 14px;
+        line-height: 1.14;
+         line-height: 100%;
+        text-transform:uppercase;
+        color:var(--primary-white);
+      }
+    
+    &__list{
+      display:flex;
+      align-items: left;
+      gap:10px;
+      padding-left:0px;
+    }
+    
+    &__icon{
+      display:inline-block;
+      fill:var(--primary-white);
+      object-fit: cover;
+    }
+    
+    &__link{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    
+      width: 44px;
+      height: 44px;
+      background-color: #FFFFFF1A;
+      border-radius:50%;
+      
+      transition-property: bfiltertackground-color;
+      transition-duration:250ms;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__link:hover,
+    &__link:focus{
+      width: 44px;
+      height: 44px;
+      fill:var(--primary-white);
+      background-color: var(--accent-color);
+    }
+  }
+  
+   
+  
+  
+    

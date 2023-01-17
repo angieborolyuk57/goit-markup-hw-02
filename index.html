@@ -7,227 +7,236 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./sass/main.css.map">
+    <link rel="stylesheet" href="./sass/main.css">
     
 </head>
 
 <body>  
     <!--page header-->
-    <header class="page-header"> 
-        <div class="container main-nav">
-         <nav class="nav">   
-             <a class="logo" href="../goit-markup-hw-04/index.html">Web<span class="studio">Studio</span> </a>
-               <ul class="site-nav list"> 
-                  <li class="list site-nav-item"> <a class="item link" href="../goit-markup-hw-04/index.html">Студія</a></li>
-                  <li class="list site-nav-item"> <a class="item current link" href="./index.html">Портфоліо</a></li>
-                  <li class="list site-nav-item"> <a class="item link" href="#contact">Контакти</a></li>
+    <header class="header"> 
+        <div class="container header__container">
+         <nav class="header__nav">   
+             <a class="logo" href="../goit-markup-hw-04/index.html">Web<span class="header__studio">Studio</span> </a>
+               <ul class="header__nav-list list"> 
+                  <li class="header__nav-item"> <a class="header__link" href="../goit-markup-hw-04/index.html">Студія</a></li>
+                  <li class="header__nav-item"> <a class="header__link header__link--current" href="./index.html">Портфоліо</a></li>
+                  <li class="header__nav-item"> <a class="header__link" href="#contact">Контакти</a></li>
              </ul>
         </nav>
    
         <div class="auth-nav"> 
-            <a class="email auth-item" href="mailto:info@devstudio.com">
+            <a class="auth-nav__item" href="mailto:info@devstudio.com">
               <svg class="envelope" width="16" height="12">
                 <use href="./imgport/sprite.svg#envelope"></use></svg>info@devstudio.com</a>
             
-            <a class="tel-header auth-item" href="tel:+380961111111"><svg class="tel-icon" width="10" height="16">
-              <use href="./imgport/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a>         
+            <a class="auth-nav__item" href="tel:+380961111111">
+        <svg class="tel-icon" width="10" height="16">
+        <use href="./imgport/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a>         
   </div>  
         </div>       
      </header>
      <!--main section-->
 <main>
- <section class="filter-section">
+ <section class="products">
        <!--filter navigation-->
     <div class="container">
-        <ul class="filter-nav list">
-        <li class="list item">
+        <ul class="products__nav list">
+        <li class="products__filter">
             <button class="btn blue-button" type="button">Усі</button>
         </li>
-        <li class="list item">
+        <li class="products__filter">
             <button class="btn" type="button">Веб-сайти</button>
         </li>
-        <li class="list item">
+        <li class="products__filter">
             <button class="btn" type="button">Додатки</button>
         </li>
-        <li class="list item">
+        <li class="products__filter">
             <button class="btn" type="button">Дизайн</button>
         </li>
-        <li class="list item">
+        <li class="products__filter">
             <button class="btn" type="button">Маркетинг</button>
         </li>
     </ul>
-    <ul class="list filter-wrap">
-        <li class="list filt-element">
+    <ul class="list product-cards">
+        <li class="product-cards__item">
             <div class="img-container">
             <img src="./imgport/img.jpg" alt="Технокряк" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
         </div>
-       <div class="border">
-        <div class="text-container">
-            <h3 class="category-name">Технокряк</h3> <span class="category-type">Веб-сайт</span>
+       <div class="product-cards__border">
+        <div class="product-cards__text-container">
+        <div class="product-cards__title">
+            <h3 class="product-cards__type">Технокряк</h3> <span class="category-type">Веб-сайт</span>
         </div> 
             </div>
         </li>
-        <li class="list filt-element"> 
+        <li class="product-cards__item"> 
             <div class="img-container">
             <img src="./imgport/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-           <div class="border">
-             <div class="text-container">
-                <h3 class="category-name">Постер New Orlean vs Golden Star</h3> <span class="category-type">Дизайн</span>
+           <div class="product-cards__border">
+             <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Постер New Orlean vs Golden Star</h3>
+                <span class="product-cards__type">Дизайн</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element">
+        <li class="product-cards__item">
             <div class="img-container">
             <img src="./imgport/img-3.jpg" alt="Ресторан Seafood" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-            <div class="border">
-                <div class="text-container">
-                <h3 class="category-name">Ресторан Seafood</h3> <span class="category-type">Додаток</span>
+            <div class="product-cards__border">
+                <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Ресторан Seafood</h3>
+                <span class="product-cards__type">Додаток</span>
         </div>
     </div>
         </li>
-        <li class="list filt-element"> 
+        <li class="product-cards__item"> 
             <div class="img-container">
             <img src="./imgport/img-4.jpg" alt="Проєкт Prime" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlayt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-            <div class="border">
-                <div class="text-container">
-                <h3 class="category-name">Проєкт Prime</h3> <span class="category-type">Маркетинг</span>
+            <div class="product-cards__border">
+                <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Проєкт Prime</h3>
+                <span class="product-cards__type">Маркетинг</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element"> 
+        <li class="product-cards__item"> 
             <div class="img-container">
             <img src="./imgport/img-5.jpg" alt="Проєкт Boxes" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-          <div class="border">
-              <div class="text-container">
-                <h3 class="category-name">Проєкт Boxes</h3> <span class="category-type">Додаток</span>
+          <div class="product-cards__border">
+              <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Проєкт Boxes</h3>
+                <span class="product-cards__type">Додаток</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element">
+        <li class="product-cards__item">
             <div class="img-container">
             <img src="./imgport/img-6.jpg" alt="Inspiration has no Borders" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-           <div class="border"> 
-            <div class="text-container">
-                <h3 class="category-name">Inspiration has no Borders</h3> <span class="category-type">Веб-сайт</span>
+           <div class="product-cards__border"> 
+            <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Inspiration has no Borders</h3>
+                <span class="product-cards__type">Веб-сайт</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element"> 
+        <li class="product-cards__item"> 
             <div class="img-container">
             <img src="./imgport/img-7.jpg" alt="Видання Limited Edition" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-           <div class="border">
-             <div class="text-container">
-                <h3 class="category-name">Видання Limited Edition</h3> <span class="category-type">Дизайн</span>
+           <div class="product-cards__border">
+             <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Видання Limited Edition</h3>
+                <span class="product-cards__type">Дизайн</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element">
+        <li class="product-cards__item">
             <div class="img-container">
             <img src="./imgport/img-8.jpg" alt="Проєкт LAB" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-           <div class="border">
-             <div class="text-container">
-                <h3 class="category-name">Проєкт LAB</h3> <span class="category-type">Маркетинг</span>
+           <div class="product-cards__border">
+             <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Проєкт LAB</h3>
+                <span class="product-cards__type">Маркетинг</span>
             </div>
         </div>
         </li>
-        <li class="list filt-element">
+        <li class="product-cards__item">
             <div class="img-container">
             <img src="./imgport/img-9.jpg" alt="Growing Business" width="370">
-            <div class="filter-text-overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+            <div class="product-cards__overlay">
+                <p class="product-cards__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             </div>
-           <div class="border"> 
-            <div class="text-container">
-                <h3 class="category-name">Growing Business</h3> <span class="category-type">Додаток</span>
+           <div class="product-cards__border"> 
+            <div class="product-cards__text-container">
+                <h3 class="product-cards__title">Growing Business</h3> 
+                <span class="product-cards__type">Додаток</span>
             </div>
         </div>
         </li>
     </ul>
 </div>
-
  </section>
-
 </main>
 <!--footer-->   
 <footer class="footer"> 
-    <div class="container footer-container">
+    <div class="container footer__container">
     <div>
-        <a href="../goit-markup-hw-01/index.html" class="logo-footer">Web<span class="studio-footer">Studio</span>
+        <a href="../goit-markup-hw-01/index.html" class="footer__logo">Web<span class="footer__studio">Studio</span>
     </a>
-   <address id="contact" class="address-line">
-            <span class="address">м. Київ, пр-т Лесі Українки, 26</span>
-            <a class="email-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+   <address id="contact" class="footer__contacts">
+            <span class="footer__address">м. Київ, пр-т Лесі Українки, 26</span>
+            <a class="footer__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
     </address>
 </div>
 <div class="socials-footer">
-    <h3 class="headline-footer">Приєднуйтесь</h3>
-    <ul class="socials-list-footer list">
-      <li class="socials-item-footer list">
-        <a href="#" class="social-link-footer"> 
-          <svg class="socials-icon-footer" width="20" height="20">
+    <h3 class="socials-footer__headline">Приєднуйтесь</h3>
+    <ul class="socials-footer__list list">
+      <li class="socials-footer__item">
+        <a href="#" class="socials-footer__link"> 
+          <svg class="socials-footer__icon" width="20" height="20">
           <use href="./imgport/sprite.svg#instagram"> </use>
         </svg>
         </a>
       </li>
-      <li class="socials-item-footer list">
-        <a href="#" class="social-link-footer"> 
-          <svg class="socials-icon-footer" width="20" height="20">
+      <li class="socials-footer__item">
+        <a href="#" class="socials-footer__link"> 
+          <svg class="socials-footer__icon" width="20" height="20">
           <use href="./imgport/sprite.svg#twitter"> </use>
         </svg>
         </a>
       </li>
-      <li class="socials-item-footer list">
-        <a href="#" class="social-link-footer"> 
-          <svg class="socials-icon-footer" width="20" height="20">
+      <li class="socials-footer__item">
+        <a href="#" class="socials-footer__link"> 
+          <svg class="socials-footer__icon" width="20" height="20">
           <use href="./imgport/sprite.svg#facebook"> </use>
         </svg>
         </a>
       </li>
-      <li class="socials-item-footer list">
-        <a href="#" class="social-link-footer">  
-          <svg class="socials-icon-footer" width="20" height="20">
+      <li class="socials-footer__item">
+        <a href="#" class="socials-footer__link">  
+          <svg class="socials-footer__icon" width="20" height="20">
           <use href="./imgport/sprite.svg#linkedin"> </use>
         </svg>
         </a>
@@ -235,14 +244,14 @@
      </ul>
   </div>
   <form class="subscription">
-    <label class="subscription-label" for="subscription">Підпишіться на розсилку</label>
-   <div class="flex-position">
+    <label class="subscription__label" for="subscription">Підпишіться на розсилку</label>
+   <div class="subscription__flex">
     <input 
-   class="subscribe-input"
+   class="subscription__input"
    type="email" 
     name="subsription"
     placeholder="E-mail">
-    <button class="subscribe-button" type="submit">Підписатися
+    <button class=" btn subscription__button" type="submit">Підписатися
       <svg class="send-icon" width="24" height="24">
         <use href="./imgport/sprite.svg#send-icon"></use>
       </svg>

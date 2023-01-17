@@ -1,0 +1,43 @@
+/* Auth nav links design */
+
+.auth-nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &__item{
+        color:var(--main-text-color);
+        text-decoration:none;
+      
+        transition-property: color;
+        transition-duration:250ms;
+        transition-timing-function:var(--timing-function);
+      }
+      
+      &__item + &__item{
+        margin-left:40px;
+      }
+      
+      &__item:hover,
+      &__item:focus{
+        fill:var(--accent-color);
+      color:var(--accent-color);
+      }
+  }
+  
+  .envelope,
+  .tel-icon{
+  fill:currentColor;
+  margin-right:10px;
+  
+  transition-property: fill;
+  transition-duration:250ms;
+  transition-timing-function:var(--timing-function);
+  }
+  

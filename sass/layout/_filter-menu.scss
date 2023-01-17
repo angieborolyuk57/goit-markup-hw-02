@@ -1,0 +1,25 @@
+/* filter-nav */
+
+.products{
+    padding-top:94px;
+    padding-bottom:94px;
+
+    &__nav{
+        display:flex;
+        justify-content: center;
+        margin-top:0px;
+        margin-bottom:50px;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        color: var(--main-black);
+        }
+        
+        &__filter + .products__filter{
+          margin-left:8px;
+        }
+  }
+  
+  
